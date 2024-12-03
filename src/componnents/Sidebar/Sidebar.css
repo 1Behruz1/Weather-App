@@ -1,0 +1,33 @@
+body {
+  background-color: #1e1e1e;
+}
+.sidebar{
+  padding-top: 82px;
+}
+.sidebar__inner {
+  background-color: #1e1e1e; 
+  color: #ffffff;
+  margin-top: 5px;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 1300px;
+}
+@media screen and (max-width: 645px) {
+  .sidebar{
+    padding-top: 130px;
+  }}
+@media screen and (max-width: 535px) {
+  .sidebar{
+    padding-top: 200px;
+  }
+    .sidebar__box {
+      flex-direction: column;  
+      width: 100%; 
+      max-width: 500px; 
+    }
+    .sidebar__inner{
+        flex-direction: column;
+    }
+  }
+  

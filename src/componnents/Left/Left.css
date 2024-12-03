@@ -1,0 +1,180 @@
+/* Sidebar Box */
+.sidebar__box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px; /* Constrains width on larger screens */
+    gap: 15px;
+}
+
+@media screen and (max-width: 535px) {
+    .sidebar__box {
+      max-width: 500px;
+    }
+  }
+/* Current Weather Section */
+.sidebar__current {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 300px; /* Restrict maximum width */
+}
+
+.sidebar__current-title {
+    font-size: 1.125rem; /* Relative font size for better scalability */
+    font-weight: bold;
+}
+
+.sidebar__current-temp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar__current-temp h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.sidebar__current-temp img {
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar__current-weather p {
+    font-size: 0.875rem;
+    opacity: 0.7;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.sidebar__current-info {
+    margin-top: 10px;
+}
+
+.sidebar__current-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar__current-info li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar__current-info p {
+    margin: 0;
+    font-size: 0.875rem; /* Relative size for text */
+}
+
+/* 5-Day Forecast Section */
+.sidebar__forecast {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; 
+}
+
+.sidebar__forecast-title {
+    font-size: 1.125rem; /* Relative font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sidebar__forecast-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.sidebar__forecast-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 15px;
+}
+
+.sidebar__forecast-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar__forecast-item h3{
+    font-size: 16px;
+    text-align: center;
+}
+
+.sidebar__forecast-item p {
+    margin: 0;
+    font-size: 13px; 
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for tablets and mobile devices */
+    .sidebar__box {
+        gap: 10px;
+    }
+  
+    .sidebar__current,
+    .sidebar__forecast {
+        padding: 15px;
+        max-width: 100%; /* Full width for smaller screens */
+    }
+  
+    .sidebar__current-temp {
+        gap: 8px;
+    }
+  
+    .sidebar__current-temp h2 {
+        font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+  
+    .sidebar__forecast-item img {
+        width: 35px;
+        height: 35px; /* Adjust icon size */
+    }
+  
+    .sidebar__forecast-item h3,
+    .sidebar__forecast-item p {
+        font-size: 0.75rem; /* Adjust font size */
+    }
+}
+@media screen and (max-width: 605px) {
+    .sidebar__forecast-item p {
+        font-size: 10px;
+    }
+  }
+@media screen and (max-width: 480px) {
+    /* Fine-tuning for smaller mobile devices */
+    .sidebar__current,
+    .sidebar__forecast {
+        padding: 10px;
+    }
+  
+    .sidebar__current-temp img {
+        width: 40px;
+        height: 40px; /* Scale icons */
+    }
+  
+    .sidebar__forecast-item img {
+        width: 30px;
+        height: 30px; /* Further reduce size */
+    }
+}
