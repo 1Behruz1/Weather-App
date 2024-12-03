@@ -6,7 +6,7 @@ import { FaTemperatureHigh } from 'react-icons/fa6';
 import { MdOutlineRemoveRedEye, MdOutlineWaterDrop } from "react-icons/md";
 import { IoNavigateOutline } from "react-icons/io5";
 import './Right.css'
-import AirItem from '../airItem/airItem';
+import AirItem from '../AirItem/AirItem.jsx';
 const Right = ({air, currentWeather}) => {
   const status = ['Good', 'Fair', 'Modarate', 'Poor', 'Very Poor']
   const sunData= {
